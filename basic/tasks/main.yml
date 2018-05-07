@@ -3,3 +3,9 @@
   get_url:
     url: https://developers.redhat.com/download-manager/file/jboss-eap-7.1.0.zip
     dest: /home/giovanni/Downloads/jboss-eap-7.1.0.zip
+
+- name: Unarchive a file that is already on the remote machine
+  unarchive:
+    src: /home/giovanni/Downloads/jboss-eap-7.1.0.zip
+    dest: /home/giovanni/Documents
+    remote_src: yes
