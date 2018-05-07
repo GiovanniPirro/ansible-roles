@@ -1,2 +1,5 @@
 ---
-# tasks file for basic
+- name: Download file from internet
+  get_url:
+    url: https://developers.redhat.com/download-manager/file/jboss-eap-7.1.0.zip
+    dest: /home/giovanni/Downloads/jboss-eap-7.1.0.zip
